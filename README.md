@@ -7,7 +7,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Getting Started
 
 Get an api key from [Open Weather API](https://openweathermap.org/)<br/>
-Set up ```.env``` in the root directory and set ```REACT_APP_API_KEY``` environment variable to the api key<br/>
+Add ```.env``` in the root directory<br/>
+In the ```.env```, set ```REACT_APP_API_KEY``` environment variable to the api key<br/>
 Then run
 ```
 npm install
