@@ -14,9 +14,11 @@
 .stateSelect {
   text-align: left;
 }
-
-.error {
+.error-text {
     color: #ffffff;
+}
+
+.form-error {
     text-align: left;
     margin-left:1px;
 }

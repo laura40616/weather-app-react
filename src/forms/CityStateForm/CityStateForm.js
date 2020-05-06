@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Formik } from 'formik'
 import * as Yup from 'yup'
 
@@ -16,11 +16,13 @@ const validationSchema =
     })
 
 const initialValues = { city: '', state: '' }
-const CityStateForm = () => {
+const CityStateForm = ({ setWeather }) => {
+  const [submitError, setSubmitError] = useState('')
+  const handleFormSubmit = (values) => (onSubmit({ setWeather, setSubmitError, ...values }))
   return (
     <Formik
       initialValues={initialValues}
-      onSubmit={onSubmit}
+      onSubmit={handleFormSubmit}
       validationSchema={validationSchema}
     >{props => {
         const {
@@ -43,7 +45,7 @@ const CityStateForm = () => {
                 onChange={handleChange}
                 onBlur={handleBlur}
               />
-              {errors.city && touched.city && (<div className='error'>{errors.city}</div>)}
+              {errors.city && touched.city && (<div className='error-text field-error'>{errors.city}</div>)}
             </div>
             <div className='fields'>
               <StateSelect
@@ -52,8 +54,9 @@ const CityStateForm = () => {
                 onChange={handleChange}
                 value={values.state}
               />
-              {errors.state && touched.state && (<div className='error'>{errors.state}</div>)}
+              {errors.state && touched.state && (<div className='error-text field-error'>{errors.state}</div>)}
             </div>
+            {submitError && (<div className='error-text'>{submitError}</div>)}
             <div>
               <PinkButton type='submit' disabled={isSubmitting} text='Get Weather' />
             </div>

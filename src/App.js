@@ -1,5 +1,4 @@
 import React from 'react'
-import 'typeface-roboto'
 
 import HomePage from './pages/HomePage/HomePage'
 
