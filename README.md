@@ -4,6 +4,15 @@ A weather app that utilizes [Open Weather API](https://openweathermap.org/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Getting Started
+
+Get an api key from [Open Weather API](https://openweathermap.org/)<br/>
+Set up ```.env``` in the root directory and set ```REACT_APP_API_KEY``` environment variable to the api key<br/>
+Then run
+```
+npm install
+npm run start
+```
 ## Available Scripts
 
 In the project directory, you can run:
