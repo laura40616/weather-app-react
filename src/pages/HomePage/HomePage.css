@@ -1,0 +1,18 @@
+.heading {
+    color: white;
+    margin: 1em;
+}
+.layout {
+    width: 75%;
+    margin: auto;
+}
+
+.thing {
+  width: 100%;
+}
+
+@media (min-width: 1280px) {
+    .layout {
+      width: 50%;
+    }
+  }

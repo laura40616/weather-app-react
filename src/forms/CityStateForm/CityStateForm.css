@@ -1,0 +1,22 @@
+.fields {
+    margin: 1em;
+    padding: 2em;
+    width: 70%;
+    margin: auto;
+}
+
+.fields > input, select {
+    width: 100%;
+    height: 2rem;
+    font-size: 1em;
+}
+
+.stateSelect {
+  text-align: left;
+}
+
+.error {
+    color: #ffffff;
+    text-align: left;
+    margin-left:1px;
+}
