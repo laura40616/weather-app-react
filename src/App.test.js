@@ -7,7 +7,7 @@ describe('<App />', () => {
   it('should render App component', () => {
     const app = mount(<App />)
     expect(app.text()).to.eql('Home Page Component')
-    expect(app.find('#homePage')).to.exist
+    expect(app.find('#homePage').length).to.eql(1)
     expect(app.find('.App')).to.exist
   })
 })

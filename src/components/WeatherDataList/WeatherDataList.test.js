@@ -1,4 +1,4 @@
-/* global it, expect, describe, mount, render */
+/* global it, expect, describe, render */
 import WeatherDataList from './WeatherDataList'
 
 describe('<WeatherDataList />', () => {

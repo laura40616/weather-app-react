@@ -2,7 +2,7 @@ import React from 'react'
 
 import './WeatherDataList.css'
 
-const WeatherDataList = ({weatherData}) => {
+const WeatherDataList = ({ weatherData }) => {
   const { currentTemp, feelsLike, sky, wind, minTemp, maxTemp } = weatherData
   return (
     <ul>

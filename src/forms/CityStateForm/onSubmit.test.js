@@ -1,4 +1,4 @@
-/* global it, expect, describe, jest, fetch, beforeEach, afterEach */
+/* global it, expect, describe, jest, beforeEach, afterEach */
 import onSubmit from './onSubmit'
 
 describe('onSubmit', () => {

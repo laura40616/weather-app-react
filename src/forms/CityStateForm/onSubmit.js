@@ -1,3 +1,4 @@
+/* global fetch */
 import normalizeWeather from '../../helpers/normalizeWeather'
 const onSubmit = async ({ setWeather, setSubmitError, city, state }) => {
   const apiKey = process.env.REACT_APP_API_KEY
