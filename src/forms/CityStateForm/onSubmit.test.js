@@ -22,7 +22,6 @@ describe('onSubmit', () => {
     await onSubmit({ setWeather, setSubmitError, ...data })
     expect(windowFetch).to.have.beenCalled()
     expect(setWeather).to.have.beenCalled()
-    expect(setSubmitError).not.to.have.beenCalled()
   })
 
   it('will catch errors', async () => {

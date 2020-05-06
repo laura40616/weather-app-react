@@ -9,6 +9,7 @@ const onSubmit = async ({ setWeather, setSubmitError, city, state }) => {
       if (response.status === 200) {
         const result = await response.json()
         setWeather(normalizeWeather(result))
+        setSubmitError('')
       } else {
         setSubmitError('Please try again. (Double check city and state)')
         setWeather({})
