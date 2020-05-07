@@ -29,7 +29,7 @@ describe('<CityStateForm />', () => {
     let component, errors
     await act(async () => {
       component = mount(<CityStateForm />)
-      component.find('input[name="city"]').simulate('change', { target: {name: 'city', value: 22} })
+      component.find('input[name="city"]').simulate('change', { target: { name: 'city', value: 22 } })
       await wait(0)
       component.find('form').simulate('submit', { preventDefault () {} })
       await wait(0)
@@ -45,7 +45,7 @@ describe('<CityStateForm />', () => {
     const inputText = 'a'.repeat(31)
     await act(async () => {
       component = mount(<CityStateForm />)
-      component.find('input[name="city"]').simulate('change', { target: {name: 'city', value: inputText} })
+      component.find('input[name="city"]').simulate('change', { target: { name: 'city', value: inputText } })
       await wait(0)
       component.find('form').simulate('submit', { preventDefault () {} })
       await wait(0)
@@ -56,5 +56,3 @@ describe('<CityStateForm />', () => {
     expect(errors.get(0).props.children).to.match(/\b30\b/i)
   })
 })
-
-

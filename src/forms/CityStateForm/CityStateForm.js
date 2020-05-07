@@ -11,10 +11,10 @@ import './CityStateForm.css'
 const validationSchema =
     Yup.object().shape({
       city: Yup.string()
-      .trim()
-      .matches(/[a-zA-Z]+/, 'Letters only')
-      .max(30, '30 character maximum')
-      .required('Required field'),
+        .trim()
+        .matches(/[a-zA-Z]+/, 'Letters only')
+        .max(30, '30 character maximum')
+        .required('Required field'),
       state: Yup.string()
         .required('Required field')
     })
