@@ -13,7 +13,6 @@ const validationSchema =
       city: Yup.string()
       .trim()
       .matches(/[a-zA-Z]+/, 'Letters only')
-      .min(2, 'Provide at least 2 letters')
       .max(30, '30 character maximum')
       .required('Required field'),
       state: Yup.string()
