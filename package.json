@@ -10,7 +10,6 @@
     "chai": "^4.2.0",
     "delve": "^0.3.2",
     "formik": "^2.1.4",
-    "fsevents": "^1.2.11",
     "jest-environment-enzyme": "^7.1.2",
     "jest-enzyme": "^7.1.2",
     "react": "^16.13.1",
